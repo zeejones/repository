@@ -1,5 +1,11 @@
-const myButton = document.getElementByClass('nextButton');
-myButton.addEventListener('click', () => {
-    function scrollToTop() {
-    window.scrollTo(0,0);
-    })
+var nextButton = document.getElementById("nextButton");
+var rootElement = document.documentElement;
+
+function nextButton() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+nextButton.addEventListener("click", nextButton);
