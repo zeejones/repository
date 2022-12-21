@@ -1,4 +1,5 @@
 const myButton = document.getElementById('nextButton');
 myButton.addEventListener('click', () => {
-    document.body.scrollTop = 0;
+    function scrollToTop() {
+    window.scrollTo(0,0);
     })
